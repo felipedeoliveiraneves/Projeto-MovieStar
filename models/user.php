@@ -21,16 +21,18 @@ class user {
     }
 }
 
-interface userDAOinterface {
+interface UserDAOInterface {
+
     public function buildUser($data);
-    public function create(user $user, $authUser = false);
-    public function update(user $user, $redirect = true);
+    public function create(User $user, $authUser = false);
+    public function update(User $user, $redirect = true);
     public function verifyToken($protected = false);
-    public function setTokenSession($token, $redirect = true);
+    public function setTokenToSession($token, $redirect = true);
     public function authenticateUser($email, $password);
-    public function findByemail($email);
-    public function findByid($id);
+    public function findByEmail($email);
+    public function findById($id);
     public function findByToken($token);
     public function destroyToken();
-    public function changePassword(user $user);
-}
+    public function changePassword(User $user);
+
+  }

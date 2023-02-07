@@ -32,7 +32,7 @@ if($name && $lastname && $email && $password){
 
             // criação de  token e senha 
             $usertoken = $user->generateToken();
-            $finalPassword = $user->generateToken($password);
+            $finalPassword = $user->generatePassword($password);
 
             $user->name = $name;
             $user->lastname = $lastname;
@@ -58,13 +58,13 @@ if($name && $lastname && $email && $password){
 }
 
 }else if($type === "login") {
-  
+
     $email = filter_input(INPUT_POST, "email");
     $password = filter_input(INPUT_POST, "password");
 
     //tenta autenticar usuario
     if($userDAO->authenticateUser($email, $password)){
-
+        
         $message->setmessage("Seja bem-vindo!", "success", "editprofile.php");
 
         //Redireciona o usuario, caso não conseguir autenticar
@@ -73,5 +73,5 @@ if($name && $lastname && $email && $password){
     }
 }else {
 
-    $message->setmessage("Informações invalida!", "error", "index.php");
+    $message->setmessage("Informações invalida!", "error", "index.php"); 
 }
