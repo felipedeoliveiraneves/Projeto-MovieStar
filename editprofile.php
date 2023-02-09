@@ -52,7 +52,7 @@
            </form> 
            <div class="row" id="change-password-container">
             <div class="col-md-4">
-                <h2>Altere a senha:</h2>
+                <h2>Alterar a senha:</h2>
                 <p class="page-description">Digite a nova senha e confirme, para alterar sua senha:</p>
                 <form action="<?= $BASE_URL ?>user_process.php" method="POST">
                   <input type="hidden" name="type" value="changepassword">
