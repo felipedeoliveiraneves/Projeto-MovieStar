@@ -28,7 +28,7 @@
         </thead>
         <tbody>
             <tr>
-                <td scope="row">1</td>
+                <td scope="row"> 1</td>
                 <td><a href="#" class="table-movie-title">Titulo</a></td>
                 <td><i class="fas fa-star"></i>9</td>
                 <td class="actions-column">
