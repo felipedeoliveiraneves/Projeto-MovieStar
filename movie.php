@@ -48,7 +48,7 @@ if(!empty($userData)) {
 ?>
 
 <div id="main-container" class="container-fluid">
-    <div class="row">
+<div class="row">
         <div class="offset-md-1 col-md-6 movie-container">
             <h1 class="page-title"><?= $movie->title ?></h1>
             <p class="movie-details">
@@ -61,9 +61,7 @@ if(!empty($userData)) {
             <iframe src="<?= $movie->trailer ?>" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encryted-media; gyroscope;
             picture-in-picture" allowfullscreen></iframe>
             <p><?= $movie->description ?></p>
-
             </div>
-        </div>
         <div class="col-md-4">
            <div class="movie-image-container" style="background-image: url('<?= $BASE_URL ?>/img/movies/<?= $movie->image ?>')"></div>
         </div>
