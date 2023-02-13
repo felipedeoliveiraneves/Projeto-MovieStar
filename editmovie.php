@@ -82,7 +82,7 @@
                 </form>
             </div>
                 <div class="col-md-3">
-                <div class="movie-container" style="background-image: url('<?= $BASE_URL ?>img/movies/<?= $movie->image ?> ')"></div>
+                <div class="movie-image-container" style="background-image: url('<?= $BASE_URL ?>img/movies/<?= $movie->image ?> ')"></div>
             </div>
         </div>
     </div>

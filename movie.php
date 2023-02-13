@@ -70,7 +70,7 @@ $alreadyreviewed = false;
         <div class="offset-md-1 col-md-10" id="reviews-container">
             <h3 id="reviews-title">Avaliações:</h3>
             <!-- Verifica se habilita a review para usuario ou não -->
-             <?php  if(!empty($userData) && !$userOwnsMovie && !$alreadyreviewed):?>
+             <?php  if(!empty($userData) && !$useOwnsMovie && !$alreadyreviewed):?>
             <div class="col-md-12" id="review-form-container">
                 <h4>Envie sua avaliação:</h4>
                 <p class="page-description">Preencha o formulario com a nota e comentario sobre o filme</p>
