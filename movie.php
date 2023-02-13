@@ -47,13 +47,13 @@ if(!empty($userData)) {
     if($userData->id === $movie->users_id){
         $useOwnsMovie = true;
     }
+
+    // resgate as reviews do filme
+   $alreadyreviewed = $reviewDao->hasAlreadyReviewed($id, $userData->id);
+
 }
 // Resgatar as reviews do filme
 $movieReviews = $reviewDao->getMoviesReview($id);
-
-// resgate as reviews do filme
-
-$alreadyreviewed = false;
 
 ?>
 
